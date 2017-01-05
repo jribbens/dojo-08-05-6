@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
+import os
 import random
 import socketserver
 
-WORDS_FILE = "words.txt"
+WORDS_FILE = os.path.join(os.path.dirname(__file__), "words.txt")
 HOST = "0.0.0.0"
 PORT = 1234
 
